@@ -1,0 +1,44 @@
+Task Management Android App
+
+
+Steps to Create the App
+
+ Set up a new Android project
+
+Open Android Studio.
+
+Create a new Empty Activity project.
+
+Name your project (e.g., TaskManagerApp), choose Java as the language, and set the minimum API level (e.g., API 21).
+
+
+Design the Layout (XML)
+
+We will use an EditText, Spinner, Button, and ListView.
+
+Design the Layout.xml file--
+
+
+ Create SQLite Database Helper (Java)
+
+In Android, SQLite is used to store data. Create a TaskDatabaseHelper class that extends SQLiteOpenHelper.
+
+TaskDatabaseHelper.java file--
+
+Task Model Class
+Define a model class Task to represent the tasks.
+
+Task.java file--
+
+MainActivity Code (Java)
+This is where you write the core logic for your app to add, delete, and display tasks.
+
+MainActivity.java file--
+
+Usage
+Task Entry:  Users can type a task and select a priority (Low, Medium, High). After clicking the Add Task button, the task is saved to the SQLite database and displayed in the ListView.
+
+Viewing Tasks: The tasks are shown in a ListView with the format "Task Name (Priority)".
+Delete Tasks: Long-pressing on a task in the list deletes it from both the UI and the database.
+
+Persistent Storage: The SQLite database ensures that tasks persist across app restarts.
